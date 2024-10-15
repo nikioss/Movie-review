@@ -25,7 +25,7 @@ SECRET_KEY = '=r_g0)#@zsm7tbu@)!x+n1$(oin%)=envz64aq!tdeph7-bx)9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['web-production-3642.up.railway.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -119,3 +119,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
