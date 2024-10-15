@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Prediction</title>
+</head>
+<body>
+    <h1>Submit a Movie Review</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h2>Prediction Result</h2>
+        <p>Status: {{ result.status }}</p>
+        <p>Rating: {{ result.rating }}</p>
+    {% endif %}
+</body>
+</html>
