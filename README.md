@@ -14,3 +14,4 @@
 
 6.Развертывание сервиса в онлайн доступе через платформу railway
 
+Ссылка на сайт: https://web-production-3642.up.railway.app/reviews/
